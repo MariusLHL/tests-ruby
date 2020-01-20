@@ -48,10 +48,10 @@ describe "#multiply" do
   end
 
   it "multiplies two other numbers"
-    # one other test here, don't forget do end ;)
+  expect(multiply(3, 7)).to eq(21)
 
   it "multiplies two other numbers, one of them being 0"
-    # one last test, with 0 in it
+  expect(multiply(10, 0)).to eq(0)
 
 end
 
@@ -62,6 +62,7 @@ end
 # http://en.wikipedia.org/wiki/Factorial
 describe "#factorial" do
   it "computes the factorial of 0"
+  expect(factorial(0).to eq(1)) 
   it "computes the factorial of 1"
   it "computes the factorial of 2"
   it "computes the factorial of 5"
