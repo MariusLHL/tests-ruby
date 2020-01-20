@@ -19,17 +19,6 @@ def first_word txt
   return txt.partition(" ").first
 end
 
-def titleize txt 
-  array = txt.split(" ")
-  i = 1
-
-  while i < array.size()
-    if array[i] == "and" || array[i] == "the"
-      i += 1
-    else
-      array[i].upcase!
-      i += 1
-    end
-  end
-  return array.join(' ')
+def titleize(str)
+  str.capitalize.split.map{|x| x.size >= 4 ? x.capitalize : x}.join(" ")
 end
